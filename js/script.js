@@ -16,6 +16,10 @@ const container = document.getElementById("project_list")
 
 projects.forEach(p => {
     const div = document.createElement("div");
-    div.innerHTML = `<h3>${p.title}</h3><p>${p.desc}</p><a href=${p.repolink}>View ${p.title} repo</a>`;
+    div.innerHTML = `
+                <h3>${p.title}</h3>
+                <p>${p.desc}</p>
+                <a href=${p.repolink}>View Repository</a>
+            `;
     container.appendChild(div);
 })
