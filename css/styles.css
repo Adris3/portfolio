@@ -1,3 +1,9 @@
+:root {
+    --accent: #3b82f6;
+    --accent-soft: #dbeafe;
+    --accent-border: #bfdbfe;
+}
+
 
 * {
     box-sizing: border-box;
@@ -21,7 +27,7 @@ section {
 /* ===== Header ===== */
 header {
     background: white;
-    border-bottom: 1px solid #e5e7eb;
+    border-bottom: 3px solid var(--accent-soft);
     text-align: center;
     padding: 25px 20px;
 }
@@ -107,7 +113,7 @@ a:hover {
     background: white;
     padding: 22px;
     border-radius: 12px;
-    border: 1px solid #e5e7eb;
+    border: 1px solid var(--accent-border);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -117,6 +123,7 @@ a:hover {
 
 .project-card:hover {
     transform: translateY(-5px);
+    border: 1px solid var(--accent);
     box-shadow: 0 12px 25px rgba(0,0,0,0.08);
 }
 
