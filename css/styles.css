@@ -26,6 +26,26 @@ header {
     padding: 25px 20px;
 }
 
+header-container {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links a{
+    margin-left: 18px;
+    font-weight: 600;
+    color: #111827;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.social-links a:hover {
+    opacity: 0.6;
+}
+
 h1 {
     margin: 0;
     font-size: 2rem;
