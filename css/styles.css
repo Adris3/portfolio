@@ -1,35 +1,51 @@
+/* ===== Reset / Base ===== */
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
     margin: 0;
     background-color: #f5f7fa;
-    color: #1a1a1a;
+    color: #111827;
     line-height: 1.6;
 }
 
-/* Layout container */
+/* ===== Layout ===== */
 section {
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
-    padding: 60px 20px;
+    padding: 70px 20px;
 }
 
-/* Header */
+/* ===== Header ===== */
 header {
-    background: rgb(165, 206, 255);
-    padding: 20px;
-    text-align: center;
+    background: white;
     border-bottom: 1px solid #e5e7eb;
+    text-align: center;
+    padding: 25px 20px;
 }
 
 h1 {
     margin: 0;
+    font-size: 2rem;
 }
 
 h2 {
-    margin-bottom: 20px;
+    font-size: 1.6rem;
+    margin-bottom: 25px;
 }
 
-/* Links */
+/* ===== Sections ===== */
+#me {
+    background: white;
+}
+
+#projects {
+    background: #f9fafb;
+}
+
+/* ===== Links ===== */
 a {
     color: #2563eb;
     text-decoration: none;
@@ -40,49 +56,73 @@ a:hover {
     text-decoration: underline;
 }
 
-#project_list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-}
-
-.project-card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
-}
-
-#me {
-    background: white;
-}
-
-#projects {
-    background: #f9fafb;
-}
-
+/* ===== Resume Button ===== */
 .resume-btn {
     display: inline-block;
-    background-color: #2563eb;
+    background: #111827;
     color: white;
     padding: 12px 22px;
     border-radius: 8px;
+    margin-top: 15px;
     font-weight: 600;
     text-decoration: none;
-    transition: background-color 0.2s ease, transform 0.15s ease;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .resume-btn:hover {
-    background-color: #1e40af;
     transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-.resume-btn:active {
-    transform: translateY(0);
+/* ===== Project Grid ===== */
+#project_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* ===== Project Cards ===== */
+.project-card {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+}
+
+/* ===== Animations ===== */
+section {
+    animation: fadeUp 0.6s ease;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    section {
+        padding: 50px 16px;
+    }
 }

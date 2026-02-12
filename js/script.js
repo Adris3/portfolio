@@ -21,5 +21,7 @@ projects.forEach(p => {
                 <p>${p.desc}</p>
                 <a href=${p.repolink}>View Repository</a>
             `;
+    div.classList.add("project-card");
+
     container.appendChild(div);
 })
