@@ -62,8 +62,12 @@ h2 {
     margin-bottom: 25px;
 }
 
-p {
+h3 {
     font-size: 1.4rem;
+}
+
+li {
+    font-size: 1.2rem;
 }
 
 /* ===== Sections ===== */
