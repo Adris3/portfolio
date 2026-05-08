@@ -9,6 +9,11 @@ const projects = [
         title: "Word Count Tracker for Authors",
         desc: "Developed an application in Python using PyQt and SQL to help authors track their word counts on various projects. ",
         repolink:"https://github.com/Adris3/word_count/tree/main"
+    },
+    {
+        title: "Habit tracker made in React",
+        desc: "Followed a tutorial on how to use React to make a functioning habit tracker. Users can add a habit to the list and count how many days in the week they do that habit.",
+        repolink: "https://github.com/Adris3/habit_tracker"
     }
 ];
 
