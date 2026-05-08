@@ -116,8 +116,14 @@ a:hover {
 /* ===== Project Grid ===== */
 #project_list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
     gap: 25px;
+}
+
+@media (max-width: 680px) {
+    #project_list {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* ===== Project Cards ===== */
