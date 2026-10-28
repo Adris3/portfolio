@@ -3,8 +3,19 @@ const projects = [
     {
         title: "Hacker News Post Analysis",
         desc: "Analyzed 20,000 Hacker News posts to determine the specific types of posts that get the most engagement, and the best time of day to post.",
+        tools_used: "Python - CSV and datetime modules",
         repolink: "https://github.com/Adris3/hacker_news_post_analysis"
-    }
+    },
+    {
+        title: "Job Market Analysis",
+        desc: "Conducted an analysis on job posting data to determine the top skills required for data engineering positions in Toronto.",
+        repolink: "https://github.com/Adris3/hacker_news_post_analysis"
+    },
+    {
+        title: "Hacker News Post Analysis",
+        desc: "Analyzed 20,000 Hacker News posts to determine the specific types of posts that get the most engagement, and the best time of day to post.",
+        repolink: "https://github.com/Adris3/hacker_news_post_analysis"
+    },
 ];
 
 const container = document.getElementById("project_list")
